@@ -5,7 +5,9 @@
 <title>.:Z magazine Web Site:.</title>
 <link href="css/main.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/xoh7tsa.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&family=Nunito+Sans:wght@200;300&family=Sen&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,9 +35,9 @@
             <div id="search" class="icon">
                 <img src="images/search.svg" alt="search icon">
             </div>
-            <div id="subscribe-button" class="button">
-                    <h3><span>S</span>UBSCRIBE NOW</h3>
-            </div>
+            <a href="#" id="subscribe-button" class="button">
+                    <h3>SUBSCRIBE NOW</h3>
+            </a>
 
             </div>
         </section> 
@@ -44,16 +46,18 @@
     <main>
         <section class="grid-con" id="hero">
             <article id="hero-text" class="hero-text">
-                <h2>Subscribe</h2>
+                <h2><span>S</span>ubscribe</h2>
                 <h3>to our magazine to add fun to your daily life
                 </h3>
-                    <p>
-                        Z magazine is the most influential magazine seller. We covers everything from the latest looks of fashion and beauty to breaking cultural and social trends, and is recognized for its unique perspective and amazing visuals. 
-                        Z Magazine is famous for its multimedia brand that communicates with audiences through monthly magazines, websites, mobile apps, and SMS.
+                <p>
+                    Z magazine is the most influential magazine seller. We covers everything from the latest looks of fashion and beauty to breaking cultural and social trends, and is recognized for its unique perspective and amazing visuals. 
+                    Z Magazine is famous for its multimedia brand that communicates with audiences through monthly magazines, websites, mobile apps, and SMS.
                     </p>
-                    <div id="read_
-                    button" class="button">
-                    <h4>Read Story</h4></div>
+            
+                    <a href="#" id="read_story" class="button">
+                        <h4>Read Story</h4>
+                    </a>
+
                 </article>
                 <img src="images/hero-img_store.jpg" alt="image" id="hero-image">
             </section>  
@@ -70,8 +74,8 @@
                     <img src="https://via.placeholder.com/536x242" alt="image">
                 </div>
             </section>
-            <section >
-                <h2 id="editorial-leaders" class="grid-con">OUR EDITORIAL LEADERS</h2>
+            <section id="editorial-leaders" class="grid-con">
+                <h2>OUR EDITORIAL LEADERS</h2>
                 <article id="leaders-con">
                     <article class="grid-con">
                     <div id="about-text" class="about">
@@ -81,10 +85,9 @@
                         <p id="about-p">
                             Our editors are always traveling around the world to publish influential and interesting content in fashionable magazines. The footprints of our publication are leading the fashion. The inspirational editorial of Z magazine gives readers a unique and relevant style perspective on both print and multimedia platforms, including websites, mobile and social media.
                         </p>
-                        <div id="read_
-                        button" class="button">
-                        <h4>Read Story</h4>
-                        </div>
+                        <a href="#" id="read_story" class="button">
+                            <h4>Read Story</h4>
+                        </a>
                     </div>
                     <img src="https://via.placeholder.com/674x700" alt="image" id="about-image">
                     </article>
@@ -99,11 +102,15 @@
                         We can’t always write back to everyone, but we promise to read all our messages.
                     </p>
                 </article>
-                <div id="contact-form" class="box-color">
-                    <div>Enter your First Name…</div>
-                    <div>Enter your Last Name…</div>
-                    <div>Enter your Email Address…</div>
-                    <div>Enter your Message…</div>
+                <div id="contact-form" class="contact-box">
+                    <div class="input_box">
+                        <input type="text" id="first_name" placeholder="  Enter your First Name…"></input>
+                        <input type="text" id="last_name" placeholder="  Enter your Last Name…"></input>
+                        <input type="email" id="email" placeholder="  Enter your Email Address…"></input>
+                        <input type="text" id="message" placeholder="  Enter your Message…"></input>
+                        <input id="submit" name="submit" type="submit" value="SUBMIT">
+                    </div>
+                    
                 </div>
             </section> 
     </main>
@@ -124,13 +131,17 @@
                         </ul>
                     </nav>
                 </div>
+                
                 <div id="footer-newsletter" class="newsletter">
-                    <span>Subscribe To Z magazine</span>
+                    <p>Subscribe To Z magazine</p>
                     <span>Newsletter</span>
                 </div>
-                <div id="footer-newsletter_box" class="box-color">
-                    <p>Enter your email address…</p>
-                </div>
+            </section>
+
+            <section class="grid-con" id="email-box" >
+                <input type="email" id="sub-email" placeholder="  Enter your email address…"></input>
+                <input id="submit_footer" name="submit" type="submit" value="SUBMIT">
+
                 <div id="footer-social" class="icon">
                     <img src="images/facebook.svg" alt="facebook icon">
                     <img src="images/instargram.svg" alt="instargram icon">
