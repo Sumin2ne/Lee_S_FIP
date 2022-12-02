@@ -1,18 +1,12 @@
 @charset "UTF-8";
+
 /* CSS Document */
-
-/*Remove this rule on your HTML elements as you start to fill them with content*/
-
-.box-color {
-	color: #fff;
-	background: #000;
-	text-align: center;
-	margin: 0;
-}
 
 /*basic reset*/
 
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+html{background-color: black;}
+
 
 div,p,body,header,footer,section,article,nav { 
 	margin: 0; 
@@ -40,13 +34,33 @@ header {
 	position: sticky;
 	background-color: #383436;
 	height: 125px;
+
+	border-bottom: 5px solid #454545;
 }
 
-/* Remove underlines from links */
+img{ cursor: pointer;}
 
+/* Remove underlines from links */
 a {
 	text-decoration: none;
-	transition: all 0.5s ease-in-out;
+	color: #F0F0EF;
+}
+
+
+/* nav animation */
+li {
+	cursor: pointer;}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+	transition: all .2s ease;
+	transform: scale(1.5);
+}
+nav ul li a:hover {
+	color: #ffb9d6;
+	border-bottom: 5px solid #ffb9d6;
+	padding-bottom: 5px;
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -55,11 +69,23 @@ a {
 	display: none;
 }
 
+
+
+/*Common page elements  */
 .button {
 	background-color: #454545;
 	color: #FF96C2;
+	cursor: pointer;
 }
-/*Common page elements  */
+
+.button:hover{
+	transition: all .5s ease;
+	color: #FF006C;
+}
+.button:hover {
+	border-bottom: 5px solid #AAAAAA;
+	transition: all .5s ease;
+}
 
 /*This is essentially a box that we place the whole site in.  
 We center the box using margin 0 auto and give it a fixed width of 1920px.
@@ -78,7 +104,6 @@ you work on and the intended audience */
 	grid-column-gap: 16px;
 	padding-left: 140px;
 	padding-right: 140px;
-
 }
 
 /* header styling */
@@ -115,9 +140,6 @@ you work on and the intended audience */
 	font-size: 35px;
 }
 
-#main-nav li a {
-	color: #F0F0EF;
-}
 #search {
 	grid-column: 10;
 
@@ -144,23 +166,31 @@ you work on and the intended audience */
 
 	height: 75px;
 	width: 260px;
-	background-color: #454545;
-	border: 1px solid #F0F0EF;
+	background-color: #1b1b1b;
+	border: 1px solid #f0f0efbe;
 
 	margin-top: 35px;
 }
+
+#subscribe-button:hover {
+	background-color: #AAAAAA;
+	transition: all .3s ease;}
+
 
 .button h3 {
 	text-align: center;
 	font-size: 28px;
 
-	color: #FF006C;
+	color: #FF96C2;
 	font-family: 'minion-pro', serif;
 	font-weight: 500;
 	font-style: normal;
 
 	margin-top: 20px;
 }
+.button h3:hover {color:#FF006C;}
+
+
 /* Specific to index page desktop  */
 
 #hero {
@@ -177,7 +207,7 @@ you work on and the intended audience */
 }
 
 .hero-text h2{
-	font-family: 'minion-pro-display', serif;
+	font-family: 'minion-pro', serif;
 	font-weight: 400;
 	font-style: italic;
 	font-size: 55px;
@@ -207,11 +237,25 @@ you work on and the intended audience */
 
 #hero-image {
 	grid-column: 8/-1;
-
 	height: 582px;
 }
 
-#read_story {}
+#hero-image {
+	width: 674px;
+      height: 582px;
+	background-image:  url(../images/hero-img_sprite.png);}
+
+
+
+#hero-image:hover { 
+      background-position-y: -582px !important;
+	transition: all .7s ease;
+}
+
+
+#read_story h4:hover {	
+	
+	transition: all .3s ease;}
 
 #read_story h4 {
 	width: 260px;
@@ -284,8 +328,8 @@ you work on and the intended audience */
 	display: inline-block;
 	color: #DDDDDD;
 	font-size: 45px;
+	
 	margin-top: 170px;
-
 	padding: 0;
 }
 
@@ -444,12 +488,15 @@ input[type="email"] {font-size:28px;}
 	opacity: 1; /* Firefox */
 }
 
-
+#submit:hover {
+	color: #B21F5D;
+	background-color: #707070;
+	transition: all .3s ease;}
 
 
 /*footer goes here */
 
-#footer-con {
+.footer {
 	height: 407px;
 	
 	background-color: #383436;
@@ -489,6 +536,10 @@ input[type="email"] {font-size:28px;}
 	margin-bottom: 100px;
 }
 
+#footer-nav ul li a:hover {
+	color: #AAAAAA;
+}
+
 #footer-newsletter {
 	grid-column: 1/4;
 	color: #F0F0EF;
@@ -497,10 +548,15 @@ input[type="email"] {font-size:28px;}
 
 #footer-newsletter span{ font-style: italic;}
 
-#sub-email {grid-column: 1/5;}
-
-#email-box input {height: 80px;
+#email-box {padding-left: 140px;
 }
+
+#sub-email {
+	height: 80px;
+	grid-column: 1/5;
+}
+
+
 
 #submit_footer {
 	background-color: #101010;
@@ -510,11 +566,16 @@ input[type="email"] {font-size:28px;}
 	font-size: 30px;
 	font-family: 'Noto Sans', sans-serif;
 
-	height: 80px;
-	border: none;
+	border: none;	
 
+	height: 80px;
 	margin-top: 3px;
 }
+
+#submit_footer:hover {
+	background-color: #707070;
+	transition: all .3s ease;
+	color: #101010;}
 
 #footer-social {
 	grid-column: 10/-1;
@@ -530,23 +591,59 @@ input[type="email"] {font-size:28px;}
 	padding-right: 20px;
 }
 
+
+
+
+
 /* gallery page */
 
-#gallery-hero-con {
-	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/1920x580");
-	height: 580px;
+#gallery {
+	grid-column: 1/-1;
+	font-family: 'minion-pro', serif;
+}
+
+
+
+#gallery-hero {
+	background-color: #151515bd;
+	background-image: url(../images/book_store.png);
+
+	background-blend-mode: multiply;
+	height: 582px;
 }
 
 #gallery-text {
 	grid-column: 1/9;
-	/* Remove as content will dictate height */
-	height: 200px;
-	margin-top: 100px;
+	height: 320px;
+
+	color: #F0F0EF;
+	font-family: 'minion-pro', serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: left;
+	
+	font-size: 50px;
+	margin-top: 80px;
+}
+
+#hero_title {
+	font-weight: 500;
+	font-style: normal;
+	text-align: left;
+	font-size: 50px;
+}
+
+#gallery-text span{font-size: 90px;}
+
+#gallery-text p {
+	font-size: 35px;
+	line-height: 49px;
+
+	margin-top: 50px;
 }
 
 #gallery-controls {
-	margin-top: 200px;
+	margin-top: 100px;
 	grid-column: 6/8;
 	display: flex;
 	justify-content: center;
@@ -554,22 +651,32 @@ input[type="email"] {font-size:28px;}
 }
 
 .dot {
-	background-color: #dddddd;
+	background-color: #8b8b8bd6;
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
-	margin: 5px;
-  }
+	margin: 7px;
+}
+
+#dot1{ background-color: #f0f0f0;
+}
 
 #gallery h2 {
 	grid-column: 1/-1;
+	margin-top: 80px;
 	text-align: center;
-  }
+
+	color: #DDDDDD;
+	font-size: 48px;
+	font-family: 'Noto Sans', sans-serif;
+}
 
 .gallery-box {
 	background-color: #ddd;
 	grid-column: span 4 / span 4;
-	/* Remove as content will dictate height */
+	
 	height: 507px;
 	margin-bottom: 20px;
 }
+
+#gallery {margin-bottom: 70px;}
