@@ -2,40 +2,61 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>.:Z magazine Web Site:.</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/xoh7tsa.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&family=Nunito+Sans:wght@200;300&family=Sen&display=swap" rel="stylesheet">
 </head>
-<!-- students must convert divs to semantic tags -->
-<body>
-	<div id="container">
-        
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <div id="header-box1" class="box-color">
-                </div>
-                <div id="main-nav" class="box-color">
-                </div>
-                <div id="header-box2" class="box-color">
-                </div>
-            </div>
-        </div> 
 
+<body id="container">
+	<header>
+        <h1 class="hidden">Welcome to Z magazine Home page</h1>
+        <section id="main-header" class="grid-con" style="height: 125px;">
+                <div id="header-logo">
+                    <img src="images/logo_zm.svg" alt="Z magazine logo">
+                </div>
+
+                <div id="main-nav" class="manu">
+                    <h2 class="hidden"> Top Navigation Menu</h2>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">About Us</a></li>
+                                <li><a href="gallery.html">Contents</a> </li>
+                                <li><a href="#">Subscribe</a> </li>
+                                <li><a href="#">Contact Us</a> </li>
+                            </ul>
+                        </nav>
+                </div>
+    
+                <div id="search" class="icon">
+                    <img src="images/search.svg" alt="search icon">
+                </div>
+                <a href="#" id="subscribe-button" class="button">
+                        <h3>SUBSCRIBE NOW</h3>
+                </a>
+        </section> 
+    </header>
         <main>
 
-            <div id="gallery-hero-con">
+            <section id="gallery-hero">
                 <div class="grid-con">
-                    <div id="gallery-text" class="box-color">
+                    <div id="gallery-text" class="g-hero-text">
+                        <div id="hero_tilte"><span>Z</span> magazine</div>
+                        <p> Uniquely published in both print and digital, Z magazine has become the defining high-end magazine seller brand. Throughout print, digital, and culture, Z magazine leads creative trends.
+                            Find the contents that suit your interests.</p>
                     </div>
                     <div id="gallery-controls">
-                        <span class="dot"></span>
+                        <span id="dot1" class="dot"></span>
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
                 </div>
-            </div>
-     
+            </section>
+
             <div class="grid-con" id="gallery">
-                <h2>Blandit At Tuctor</h2>
+                <h2>Our contents Gallery</h2>
                 <div class="gallery-box">
                     <img src="https://via.placeholder.com/536x242" alt="image">
                 </div>
@@ -84,21 +105,39 @@
             </div>         
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con" id="footer">
-                <div id="footer-logo" class="box-color">
+        <footer id="container" class="footer">
+            <section class="grid-con" id="footer">
+                <div id="footer-logo" class="logo">
+                    <img src="images/logo_zm.svg" alt="Z magazine logo">
                 </div>
-                <div id="footer-nav" class="box-color">
+                <div id="footer-nav" class="menu">
+                    <h2 class="hidden"> Footer Navigation Menu</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">About Us</a></li>
+                            <li><a href="gallery.html">Contents</a> </li>
+                            <li><a href="#">Subscribe</a> </li>
+                            <li><a href="#">Contact Us</a> </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div id="footer-newsletter1" class="box-color">
+                
+                <div id="footer-newsletter" class="newsletter">
+                    <p>Subscribe To Z magazine</p>
+                    <span>Newsletter</span>
                 </div>
-                <div id="footer-newsletter2" class="box-color">
-                </div>
-                <div id="footer-social" class="box-color">
-                </div>
-            </div>
-        </div>
+            </section>
 
-    </div><!--end container-->  
+            <section class="grid-con" id="email-box">
+                <input type="email" id="sub-email" placeholder="  Enter your email address…"></input>
+                <input id="submit_footer" name="submit" type="submit" value="SUBMIT">
+
+                <div id="footer-social" class="icon">
+                    <img src="images/facebook.svg" alt="facebook icon">
+                    <img src="images/instargram.svg" alt="instargram icon">
+                    <img src="images/twitter.svg" alt="twiter icon">
+                </div>
+            </section>
+        </footer>
 </body>
 </html>
