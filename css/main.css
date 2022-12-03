@@ -132,8 +132,6 @@ you work on and the intended audience */
 	display: inline;
 	margin-right: 135px ;
 
-
-
 	font-family: 'minion-pro-display', serif;
 	font-weight: 400;
 	font-style: normal;
@@ -434,6 +432,9 @@ you work on and the intended audience */
 	font-size: 30px;
 
 	line-height: 42px;
+}
+
+#email-address {margin-top: 30px;
 }
 
 #contact-form {

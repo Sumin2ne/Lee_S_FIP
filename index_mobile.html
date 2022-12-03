@@ -2,34 +2,46 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>.:Z magazine Mobile Page:.</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/xoh7tsa.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&family=Nunito+Sans:wght@200;300&family=Sen&display=swap" rel="stylesheet">
 </head>
-<!-- students must convert divs to semantic tags -->
+
 <body>
-	<div id="container">
+	<section id="container">
         
-        <div id="header-con">
+        <header id="header">
             <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
-                 <div id="mobile-nav">
+                <img src="images/logo_zm.svg" id="header-logo" class="main-logo">
+
+                <div id="mobile-nav">
                     <span class="burger"></span>
                     <span class="burger"></span>
                     <span class="burger"></span>
-                 </div>
+                </div>
             </div>    
-        </div> 
+        </header> 
 
         <main>
-            <div id="hero-con">
+            <section id="hero-con">
                 <div class="grid-con">
-                    <div id="hero-text" class="box-color">
+                    <div id="hero-text" class="hero-text">
+                        <h2><span>S</span>ubscribe</h2>
+                    
+                        <h3>to our magazine to add fun to your daily life
+                        </h3>
+                        <p>
+                            Z magazine is the most influential magazine seller. We covers everything from the latest looks of fashion and beauty to breaking cultural and social trends, and is recognized for its unique perspective and amazing visuals.
+                            </p>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <div id="image-slider-con">
-                <h2>Blandit At Tuctor</h2>
+                <h2>LATEST STORIES</h2>
                 <img src="https://via.placeholder.com/428x240" alt="image">
                 <!-- ascii symbols for <> -->
                 <span id="mobile-slider-left">&#60</span>
@@ -37,7 +49,8 @@
             </div>
 
             <div id="about-us-con">
-                <h2>Blandit At Tuctor</h2>   
+                <h2>OUR EDITORIAL
+                    LEADERS</h2>   
                     <div id="about-us-text-con">     
                         <div class="grid-con">
                             <div id="about-us-text" class="box-color">
@@ -62,15 +75,25 @@
             </div>
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con">
+        <footer id="footer-con">
+            <section class="grid-con">
                 <div id="footer-box">
-                </div>
-                <div id="footer-newsletter">
-                </div>
+                    <img src="images/logo_zm.svg" id="footer-logo" class="main-logo"></div>
+                    <div id="footer-social" class="icon">
+                        <img src="images/facebook.svg" alt="facebook icon">
+                        <img src="images/instargram.svg" alt="instargram icon">
+                        <img src="images/twitter.svg" alt="twiter icon">
+                    </div>
+                <p id="newsletter-text">Subscribe To Z magazine
+                Newsletter</p>
+                <div id="newsletter-sub">
+                <input type="email" id="sub-email" placeholder="  Enter your email address…"></input>
+                <input id="submit_footer" name="submit" type="submit" value="SUBMIT">
+                </div>  
+            
             </div>
-        </div>
-
-    </div>
+            </section>
+        </footer>
+    </section>
 </body>
 </html>
