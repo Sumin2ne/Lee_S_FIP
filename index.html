@@ -10,19 +10,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&family=Nunito+Sans:wght@200;300&family=Sen&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    
-
-	<header id="container">
-        <h1 class="hidden">Welcome to Z magazine Home page</h1>
+<body id="container">
+	<header>
         <section id="main-header" class="grid-con">
+            <h1 class="hidden">
+                Welcome to Z magazine Home page</h1>
 
             <div id="header-logo" class="logo">
                 <img src="images/logo_zm.svg" alt="Z magazine logo">
             </div>
 
-            <div id="main-nav" class="manu">
-                <h2 class="hidden"> Top Navigation Menu</h2>
+            <section id="main-nav" class="manu">
+                <h2 class="hidden">
+                Top Navigation Menu</h2>
                     <nav>
                         <ul>
                             <li><a href="index.html">About Us</a></li>
@@ -31,53 +31,67 @@
                             <li><a href="#">Contact Us</a> </li>
                         </ul>
                     </nav>
-            </div>
+            </section>
 
             <div id="search" class="icon">
                 <img src="images/search.svg" alt="search icon">
             </div>
             <a href="#" id="subscribe-button" class="button">
-                    <h3>SUBSCRIBE NOW</h3>
+                <h3>SUBSCRIBE NOW</h3>
             </a>
 
         </section> 
     </header>
 
-    <main id="container">
+    <main>
         <section class="grid-con" id="hero">
             <article id="hero-text" class="hero-text">
-                <h2><span>S</span>ubscribe</h2>
-                <h3>to our magazine to add fun to your daily life
+                <h2>
+                    <span>S</span>ubscribe
+                </h2>
+                <h3>
+                    to our magazine to add fun to your daily life
                 </h3>
                 <p>
                     Z magazine is the most influential magazine seller. We covers everything from the latest looks of fashion and beauty to breaking cultural and social trends, and is recognized for its unique perspective and amazing visuals. 
                     Z Magazine is famous for its multimedia brand that communicates with audiences through monthly magazines, websites, mobile apps, and SMS.
+                </p>
+
+                <a href="#" id="read_story" class="button">
+                    <h4>Read Story</h4>
+                </a>
+            </article>
+            <img src="images/hero_magazine-shelve.png" alt="magazines shelve" id="hero-image">
+            </img>
+        </section>  
+
+        <section class="grid-con" id="latest-story">
+            <h2>LATEST STORIES</h2>
+                <div class="story-box" id="col1">
+                    <img src="images/col1_autumn_merry-go-round.jpg" alt="latest_story-image1">
+                    <h3>CULTURE</h3>
+                    <p>Explore Thing To Do
+                        2022’ Autumn in London
                     </p>
-
-                    <a href="#" id="read_story" class="button">
-                        <h4>Read Story</h4>
-                    </a>
-                </article>
-                <div id="hero-image">
                 </div>
-            </section>  
-
-            <section class="grid-con" id="latest-story">
-                <h2>LATEST STORIES</h2>
-                <div class="product-box" id="product1">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                <div class="story-box" id="col2">
+                    <img src="images/col2_cosmetic-products.jpg" alt="latest_story-image2">
+                    <h3>BEAUTY</h3>
+                    <p>Winter Makeup Trend to Try Now, According to Pros
+                    </p>
                 </div>
-                <div class="product-box" id="product2">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                <div class="story-box" id="col3">
+                    <img src="images/col3_celebrity-fashion.jpg" alt="latest_story-image3">
+                    <h3>BEAUTY</h3>
+                    <p>At 2022 Met Gala, 
+                    Look Celebrity dress&outfit
+                    </p>
                 </div>
-                <div class="product-box" id="product3">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
-                </div>
-            </section>
-            <section id="editorial-leaders" class="grid-con">
-                <h2>OUR EDITORIAL LEADERS</h2>
-                <article id="leaders-con">
-                    <article class="grid-con">
+        </section>
+        <section id="editorial-leaders" class="grid-con">
+            <h2>OUR EDITORIAL LEADERS</h2>
+            <article id="leaders-con">
+                <section class="grid-con">
                     <div id="about-text" class="about">
                         <h3 id="about-title">
                             Our Greatest Global Editorial Leaders 
@@ -85,53 +99,59 @@
                         <p id="about-p">
                             Our editors are always traveling around the world to publish influential and interesting content in fashionable magazines. The footprints of our publication are leading the fashion. The inspirational editorial of Z magazine gives readers a unique and relevant style perspective on both print and multimedia platforms, including websites, mobile and social media.
                         </p>
-                        <a href="#" id="read_story" class="button">
+                        <a href="#s" id="read_story" class="button">
                             <h4>Read Story</h4>
                         </a>
                     </div>
-                    <img src="https://via.placeholder.com/674x700" alt="image" id="about-image">
-                    </article>
-                </article>
-            </section>
+                    <img src="images/leaders.png" alt="editorial-leaders" id="leaders-image">
+                </section>
+            </article>
+        </section>
 
-            <section class="grid-con" id="contact">
-                <article id="contact-text">
-                    <h2 id="contact-title">Contact Us</h2>
-                    <p>
-                        Please send us your feelings  with all questions, concerns, or technical issues. so that we can do better It helps us develop and move forward in a better direction.
-                        We can’t always write back to everyone, but we promise to read all our messages.
-                        <p id="email-address">contact@zmagazine.com</p>
-                    </p>
-                </article>
-                <div id="contact-form" class="contact-box">
-                    <div class="input_box">
-                        <input type="text" id="first_name" placeholder="  Enter your First Name…"></input>
-                        <input type="text" id="last_name" placeholder="  Enter your Last Name…"></input>
-                        <input type="email" id="email" placeholder="  Enter your Email Address…"></input>
-                        <input type="text" id="message" placeholder="  Enter your Message…"></input>
-                        <input id="submit" name="submit" type="submit" value="SUBMIT">
-                    </div>
-                    
+        <section class="grid-con" id="contact">
+            <article id="contact-text">
+                <h2 id="contact-title">Contact Us</h2>
+                <p>
+                    Please send us your feelings  with all questions, concerns, or technical issues. so that we can do better It helps us develop and move forward in a better direction.
+                    We can’t always write back to everyone, but we promise to read all our messages.
+                </p>
+                <p id="email-address">
+                    contact@zmagazine.com
+                </p>
+            </article>
+
+            <div id="contact-form" class="contact-box">
+                <div class="input_box">
+                    <input type="text" id="first_name" placeholder="  Enter your First Name…"></input>
+                    <input type="text" id="last_name" placeholder="  Enter your Last Name…"></input>
+                    <input type="email" id="email" placeholder="  Enter your Email Address…"></input>
+                    <input type="text" id="message" placeholder="  Enter your Message…"></input>
+                    <input id="submit" name="submit" type="submit" value="SUBMIT">
                 </div>
-            </section> 
+                    
+            </div>
+        </section> 
     </main>
 
-        <footer id="container" class="footer">
-            <section class="grid-con" id="footer">
-                <div id="footer-logo" class="logo">
-                    <img src="images/logo_zm.svg" alt="Z magazine logo">
-                </div>
-                <div id="footer-nav" class="menu">
-                    <h2 class="hidden"> Footer Navigation Menu</h2>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">About Us</a></li>
-                            <li><a href="gallery.html">Contents</a> </li>
-                            <li><a href="#">Subscribe</a> </li>
-                            <li><a href="#">Contact Us</a> </li>
-                        </ul>
-                    </nav>
-                </div>
+
+    <footer id="container" class="footer">
+        <section class="grid-con" id="footer">
+            <h2 class="hidden"> Footer Navigation Menu</h2>
+            <div id="footer-logo" class="logo">
+                <img src="images/logo_zm.svg" alt="Z magazine logo">
+            </div>
+
+            <section id="footer-nav" class="menu">
+                    <h2 class="hidden"> Footer Navigation</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="gallery.html">Contents</a> </li>
+                        <li><a href="#">Subscribe</a> </li>
+                        <li><a href="#">Contact Us</a> </li>
+                    </ul>
+                </nav>
+            </section>
                 
                 <div id="footer-newsletter" class="newsletter">
                     <p>Subscribe To Z magazine</p>
@@ -139,7 +159,7 @@
                 </div>
             </section>
 
-            <section class="grid-con" id="email-box" >
+            <div class="grid-con" id="email-box" >
                 <input type="email" id="sub-email" placeholder="  Enter your email address…"></input>
                 <input id="submit_footer" name="submit" type="submit" value="SUBMIT">
 
@@ -148,8 +168,8 @@
                     <img src="images/instargram.svg" alt="instargram icon">
                     <img src="images/twitter.svg" alt="twiter icon">
                 </div>
-            </section>
-        </footer>
+            </div>
+    </footer>
 
 </body>
 </html>

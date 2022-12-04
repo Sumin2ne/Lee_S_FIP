@@ -2,70 +2,90 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>.:Z magazine Mobile Page:.</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/xoh7tsa.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&family=Nunito+Sans:wght@200;300&family=Sen&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- students must convert divs to semantic tags -->
-	<div id="container">
-        
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
-                 <div id="mobile-nav">
-                    <span class="burger"></span>
-                    <span class="burger"></span>
-                    <span class="burger"></span>
-                 </div>
-            </div>    
-        </div> 
 
-        <main>
-            <div id="hero-gallery-con">
-                <div class="grid-con">
-                    <div id="hero-gallery-text" class="box-color">
-                    </div>
-                    <div id="gallery-controls">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
+
+<body id="container">
+
+    <header id="header">
+        <section id="main-header" class="grid-con">
+            <h1 class="hidden">Welcome to Z magazine contents page</h1>
+            <img src="images/logo_zm.svg" id="header-logo" class="main-logo">
+
+            <div id="mobile-nav">
+                <span class="burger"></span>
+                <span class="burger"></span>
+                <span class="burger"></span>
             </div>
+        </section>    
+    </header> 
 
-            <div class="grid-con" id="gallery">
-                <h2>Blandit At Tuctor</h2>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-            </div>              
-        </main>
-
-        <div id="footer-con">
+    <main>
+        <section id="gallery-hero">
+            <h2 class="hidden">Welcome to Z magazine gallery page</h2>
             <div class="grid-con">
-                <div id="footer-box">
-                </div>
-                <div id="footer-newsletter">
-                </div>
-                <div id="footer-newsletter2">
+                <div id="gallery-text" class="g-hero-text">
+                <div id="hero_tilte"><span>Z</span> magazine</div>
+                    <p> 
+                        Uniquely published in both print and digital, Z magazine has become the defining high-end magazine seller brand. Throughout print, digital, and culture, Z magazine leads creative trends.
+                        Find the contents that suit your interests
+                    </p>
+                    <span id="dot1"  class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
-        </div>
-    </div> 
+        </section>
+
+        <section class="grid-con" id="gallery">
+            <h2>Our contents Gallery</h2>
+                <div class="gallery-box">
+                    <img src="https://via.placeholder.com/388x242" alt="image">
+                </div>
+                <div class="gallery-box">
+                    <img src="https://via.placeholder.com/388x242" alt="image">
+                </div>
+                <div class="gallery-box">
+                    <img src="https://via.placeholder.com/388x242" alt="image">
+                </div>
+                <div class="gallery-box">
+                    <img src="https://via.placeholder.com/388x242" alt="image">
+                </div>
+                <div class="gallery-box">
+                    <img src="https://via.placeholder.com/388x242" alt="image">
+                </div>
+                <div class="gallery-box">
+                    <img src="https://via.placeholder.com/388x242" alt="image">
+                </div>
+        </section>              
+    </main>
+
+    <footer id="footer-con">
+        <section class="grid-con">
+            <div id="footer-box">
+                <img src="images/logo_zm.svg" id="footer-logo" class="main-logo"></div>
+                <div id="footer-social" class="icon">
+                    <img src="images/facebook.svg" alt="facebook icon">
+                    <img src="images/instargram.svg" alt="instargram icon">
+                    <img src="images/twitter.svg" alt="twiter icon">
+                </div>
+                <p id="newsletter-text">
+                    Subscribe To Z magazine
+                Newsletter
+                </p>
+                <div id="newsletter-sub">
+                    <input type="email" id="sub-email" placeholder="  Enter your email address…">
+                    <input id="submit_footer" name="submit" type="submit" value="SUBMIT">
+                </div>  
+            
+            </div>
+            </section>
+        </footer>
 </body>
 </html>
