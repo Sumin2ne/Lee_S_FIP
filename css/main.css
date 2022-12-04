@@ -35,7 +35,7 @@ header {
 	background-color: #383436;
 	height: 125px;
 
-	border-bottom: 5px solid #454545;
+	border-bottom: 5px solid #707070;
 }
 
 img{ cursor: pointer;}
@@ -54,7 +54,7 @@ li {
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-	transition: all .2s ease;
+	transition: all .2s ease-out;
 	transform: scale(1.5);
 }
 nav ul li a:hover {
@@ -236,18 +236,15 @@ you work on and the intended audience */
 #hero-image {
 	grid-column: 8/-1;
 	height: 582px;
+	width: 674px;
+	cursor: pointer;
 }
 
-#hero-image {
-	width: 674px;
-      height: 582px;
-	background-image:  url(../images/hero-img_sprite.png);}
 
 
-
-#hero-image:hover { 
-      background-position-y: -582px !important;
-	transition: all .7s ease;
+#hero-image:hover { 	
+      opacity: 70px;
+	transition: all .1s ease;
 }
 
 
@@ -276,7 +273,7 @@ you work on and the intended audience */
 /* latest stories go here */
 
 #latest-story h2 {
-	grid-column: 5/9;
+	grid-column: 1/-1;
 	text-align: center;
 	margin-top: 140px;	
 	
@@ -286,35 +283,50 @@ you work on and the intended audience */
 	color: #DDDDDD;
 }
 
-#products {
-	margin-top: 120px;
-	margin-bottom: 100px;
+.story-box h3 {
+	text-align: left;
+	font-size: 30px;
+	font-weight: 600;
+	font-style: normal;
+	text-decoration: underline;
+
+	margin-left: 40px;
+	margin-top: 20px;
 }
 
-#products h2 {
-	grid-column: 1/-1;
-	text-align: center;
+.story-box p {
+	text-align: left;
+	font-size: 40px;
+	margin-left: 40px;
+	margin-right: 20px;
+
+	cursor: pointer;
 }
 
-#product1 {
+.story-box p:hover{
+	text-decoration: underline;
+	transition: .2s ease-in-out;
+}
+
+#col1 {
 	grid-column: 1/5;
 	/* Remove as content will dictate height */
 	height: 507px;
 }
 
-#product2 {
+#col2 {
 	grid-column: 5/9;
 	/* Remove as content will dictate height */
 	height: 507px;
 }
 
-#product3 {
+#col3 {
 	grid-column: 9/-1;
 	/* Remove as content will dictate height */
 	height: 507px;
 }
 
-.product-box {
+.story-box {
 	background-color: #ddd;
 }
 
