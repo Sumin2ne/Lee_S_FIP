@@ -208,7 +208,7 @@ you work on and the intended audience, we may go as low as 320px */
 
 .story-box p {
 	text-align: left;
-	font-size: 30px;
+	font-size: 25px;
 	margin-left: 30px;
 	margin-right: 20px;
 
@@ -261,7 +261,7 @@ you work on and the intended audience, we may go as low as 320px */
 #about-p {
 	grid-column: 1/-1;
 	text-align: left;	
-	font-size: 25px;
+	font-size: 22px;
 	padding-left: 10px;
 }
 
@@ -277,8 +277,8 @@ you work on and the intended audience, we may go as low as 320px */
 	margin: 0;
 	padding-top: 10px;
 	padding-left: 10px;
+	padding-right: 10px;
 	margin-bottom: 20px;
-	margin-left: 10px;
 }
 
 .button {
@@ -330,7 +330,7 @@ you work on and the intended audience, we may go as low as 320px */
 	font-weight: 400;
 	font-style: italic;
 
-	margin-top: 0;
+	margin-top: 40px;
 	margin-bottom: 85px;
 }
 
@@ -340,7 +340,7 @@ you work on and the intended audience, we may go as low as 320px */
 	font-family: 'minion-pro-display', serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 25px;
+	font-size: 22px;
 
 	line-height: 42px;
 }
@@ -469,19 +469,43 @@ input[type="email"] {font-size: 17px;}
 	transition: all .3s ease;
 	color: #101010;}
 
+
+
+
+
+
 /* gallery page */
 
-#hero-gallery-con {
-	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/428x458");
+#gallery-hero {
+	background: url("../images/mobile-gallery_img/gallery-hero-book_store.jpg");
 	height: 458px;
+	background-blend-mode: multiply;
+	background-color: #383436a0;
 }
 
-#hero-gallery-text {
+#gallery-text {
 	grid-column: 1/-1;
-	/* Remove as content will dictate height */
+	
 	height: 350px;
 	margin-top: 20px;
+	margin: 15px;
+
+	color: #F0F0EF;
+	font-family: 'minion-pro-display', serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 22px;
+}
+
+#gallery-text span {font-size: 60px;}
+#gallery-text h3 {
+	font-family: 'minion-pro-display', serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;}
+
+#gallery-text p {
+	line-height: 30px;
 }
 
 #gallery-controls {
@@ -492,28 +516,80 @@ input[type="email"] {font-size: 17px;}
 	margin-top: 20px;
 }
 
+#rotation {
+	margin-top: 50px;
+	margin-left: 35%;
+}
+
 .dot {
-	background-color: #dddddd;
-	height: 30px;
-	width: 30px;
+	background-color: #dddddd8a;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+
 	border-radius: 50%;
 	margin: 5px;
-  }
+}
+#dot1 {background-color: #DDDDDD;}
+
+
 
 #gallery h2 {
-	text-align: center;
 	grid-column: 1/-1;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	font-family: 'Noto Sans', sans-serif;
+	color: #DDDDDD;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin: 0;
 }
 
 .gallery-box {
 	grid-column: 1/-1;
 	background-color: #ddd;
-	/* Remove as content will dictate height */
+	
 	height: 507px;
 	margin-bottom: 20px;
 }
+
+.gallery-box img {
+	width: 388px;
+	/* height: 242px; */
+}
+
+.gallery-box img:hover {
+	cursor: pointer;
+
+	transition: .2s ease;
+	filter: grayscale(100%);
+}
+
+.gallery-box h3 {text-align: left;
+	font-size: 30px;
+	font-weight: 600;
+	font-style: normal;
+	text-decoration: underline;
+
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.gallery-box p {
+	text-align: left;
+	font-size: 30px;
+	margin-left: 30px;
+	margin-right: 20px;
+
+	cursor: pointer;
+}
+
+.gallery-box p:hover{
+	text-decoration: underline;
+	transition: .2s ease-in-out;
+}
+
+#gallery {margin-bottom: 50px;}
 
 #footer-newsletter2 {
 	margin-top: 20px;
