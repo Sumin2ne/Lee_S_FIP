@@ -1,4 +1,4 @@
-## Lee_firstInitial_FIP
+## Lee_S_FIP
 
 This Project is all about Final Integrated Assignment.
 
